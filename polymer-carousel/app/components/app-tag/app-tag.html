@@ -1,0 +1,53 @@
+<link rel="import" href="../../../element.html">
+<link rel="import" href="../../../vendors/paper-carousel/paper-carousel.html">
+<dom-module id="app-tag">
+    <style>
+        img {
+            max-width: 100%;
+        }
+        .company-wraper {
+            border-right: 1px solid grey;
+        }
+        .company-logo {
+            display: inline-block;
+            margin: 10px 0px;
+            width: 70px;
+            height: 70px;
+        }
+        .carousel-wraper {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+        paper-carousel {
+            background-color: #FFFFFF;
+            padding: 20px 0px;
+        }
+        .connect {
+            color: #42c2f4;
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        .carousel-heading {
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+    <template>
+        <h1 class="carousel-heading">Carousel</h1>
+        <div class="carousel-wraper">
+            <paper-carousel items="4" responsive="600:2, 460:1" controls="true" loop="true" dots="false" dotText="false">
+                <template is="dom-repeat" items="{{products}}">
+                    <div class="company-wraper">
+                        <div>{{item.viwers}}</div>
+                        <span class="company-logo">
+                            <img src="{{item.logo}}">
+                        </span>
+                        <div>{{item.companyTag}}</div>
+                        <div class="connect">CONNECT</div>
+                    </div>
+                </template>
+            </paper-carousel>
+        </div>
+    </template>
+</dom-module>
+<script src="app-tag.js"></script>

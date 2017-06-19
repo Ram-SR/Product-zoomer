@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Polymer</title>
+        <script src="vendors/webcomponents.js"></script>
+<!--        <link rel="import" href="element.html">-->
+        <link rel="import" href="vendors/polymer/polymer.html">
+        <link rel="import" href="app/components/phone-carousel/phone-carousel.html">
+        <link rel="import" href="app/components/carousel-slide/carousel-slide.html">
+        <style>
+            .container img {
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body is="dom-bind">
+        <phone-carousel>
+                <carousel-slide class="image-hover-wrapper center"  current-image="{{currentImage}}">
+                    <img src="site/images/mobile1.jpg">
+                </carousel-slide>
+                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
+                    <img src="site/images/mobile2.jpg">
+                </carousel-slide>
+                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
+                    <img src="site/images/mobile3.jpg">
+                </carousel-slide>
+                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
+                    <img src="site/images/mobile4.jpg">
+                </carousel-slide>
+                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
+                    <img src="site/images/mobile5.jpg">
+                </carousel-slide>
+        </phone-carousel>
+    </body>
+
+</html>
