@@ -52,7 +52,21 @@
         <h1 class="carousel-heading center">Hover Carousel</h1>
         <div class="product-slides">
             <div class="left">
-                <content></content>
+                <carousel-slide class="image-hover-wrapper center"  current-image="{{currentImage}}">
+                    <img src="../../../site/images/mobile1.jpg">
+                </carousel-slide>
+                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
+                    <img src="../../../site/images/mobile2.jpg">
+                </carousel-slide>
+                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
+                    <img src="../../../site/images/mobile3.jpg">
+                </carousel-slide>
+                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
+                    <img src="../../../site/images/mobile4.jpg">
+                </carousel-slide>
+                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
+                    <img src="../../../site/images/mobile5.jpg">
+                </carousel-slide>
             </div>
             <div class="right center hovered-image-wrapper">
                 <img class="hovered-image" id="hovered-image" on-mousemove="zoomIn" on-mouseout="zoomOut" src={{currentImage}}>
