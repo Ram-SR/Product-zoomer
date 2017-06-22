@@ -49,32 +49,17 @@
                 pointer-events: none;
             }
         </style>
-        <h1 class="carousel-heading center">Hover Carousel</h1>
         <div class="product-slides">
             <div class="left">
-                <carousel-slide class="image-hover-wrapper center"  current-image="{{currentImage}}">
-                    <img src="../../../site/images/mobile1.jpg">
-                </carousel-slide>
-                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
-                    <img src="../../../site/images/mobile2.jpg">
-                </carousel-slide>
-                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
-                    <img src="../../../site/images/mobile3.jpg">
-                </carousel-slide>
-                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
-                    <img src="../../../site/images/mobile4.jpg">
-                </carousel-slide>
-                <carousel-slide class="image-hover-wrapper center" current-image="{{currentImage}}">
-                    <img src="../../../site/images/mobile5.jpg">
-                </carousel-slide>
+                <content></content>
             </div>
             <div class="right center hovered-image-wrapper">
-                <img class="hovered-image" id="hovered-image" on-mousemove="zoomIn" on-mouseout="zoomOut" src={{currentImage}}>
+                <img class="hovered-image" id="hovered-image" on-mousemove="zoomIn" on-mouseout="zoomOut" src$={{currentImage}}>
                 <div class="right center hovered-zoom-image-wrapper" id="hovered-zoom-image-wrapper">
                     <img id="hovered-zoom-image" class="hovered-zoom-image">
                 </div>
                 <div id="hover-pointer-box">
-                    <img src="https://rawgit.com/Ram-SR/Product-zoomer/master/polymer-carousel/site/images/hover-pointer-box.jpg">
+                    <img src="/polymer-carousel/site/images/hover-pointer-box.jpg">
                 </div>
             </div>
         </div>
